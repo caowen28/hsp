@@ -1,0 +1,27 @@
+String类的理解和创建对象
+String对象用于保存字符串
+字符串的字符使用的是Unicode字符编码，一个字符（不区分字母还是汉字）占两个字节
+String类实现了Serializable,说明String可串行化即可以在网络上传输
+如果实现了Comparable接口那么该类可以进行比较
+String是final类不能被继承,代表不可变字符串
+一个String对象一旦被分配其内容不可变
+
+String本质还是char数组
+
+intern（）：如果常量池中已经包含了一个等于此String类型的字符串，则返回池中的字符串，否则将String对象加入到常量池中并返回String对象的引用
+
+
+
+
+
+
+
+面试题：
+1.String a="hello"+"java";
+创建了几个对象？
+    一个
+String a="hello"+"java" --->String a="hellojava"  编译器会做优化
+
+
+
+

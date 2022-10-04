@@ -1,0 +1,19 @@
+包装类的分类：Wrapper
+    针对八种基本类型数据相应的引用类型
+    有了类的特点就可以调用类的方法
+
+    基本类型        包装类
+    boolean        Boolean
+    char           Character
+    byte           Byte
+    short          Short
+    int            Integer
+    long           Long
+    float          Float
+    double         Double
+
+   byte,short,int,long,float,double 父类都是Number
+
+   Integer与int比较时会自动拆箱--》实际上是两个int类型比较
+
+在使用包装类之前先判断是否为null,否则会抛出nullpointException
